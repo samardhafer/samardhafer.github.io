@@ -899,7 +899,7 @@ h3 {
 }
 
 .resume-section {
-  padding-top: clamp(58px, 8vw, 98px);
+  padding-top: clamp(96px, 11vw, 132px);
 }
 
 .resume-preview {
@@ -922,8 +922,9 @@ h3 {
 .resume-thumb img {
   width: 100%;
   aspect-ratio: 8.5 / 11;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top center;
+  background: #ffffff;
 }
 
 .site-footer {
