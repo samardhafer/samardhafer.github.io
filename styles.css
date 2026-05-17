@@ -899,7 +899,7 @@ h3 {
 }
 
 .resume-section {
-  padding-top: 0;
+  padding-top: clamp(58px, 8vw, 98px);
 }
 
 .resume-preview {
