@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Experience | Samar Dhafer</title>
     <meta name="description" content="Experience, education, coursework, and tools for Samar Dhafer.">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=12">
     <script defer src="https://unpkg.com/lucide@latest"></script>
-    <script defer src="site.js?v=5"></script>
+    <script defer src="site.js?v=12"></script>
   </head>
   <body>
     <header class="site-header">
@@ -16,7 +16,6 @@
         <button class="menu-button" data-menu-button aria-expanded="false" aria-controls="main-nav"><i data-lucide="menu"></i>Menu</button>
         <nav class="nav-links" id="main-nav" data-nav>
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
           <a href="projects.html">Projects</a>
           <a href="experience.html" aria-current="page">Experience</a>
           <a href="contact.html">Contact</a>
@@ -45,15 +44,23 @@
               <li>Produced culturally themed content related to events, holidays, and popular landmarks.</li>
               <li>Prepared social-first edits with platform-specific pacing and visual presentation.</li>
             </ul>
+            <button class="work-showcase-button" type="button" data-modal-target="modal-icmedia">
+              <span><i data-lucide="play-square"></i>View IC Media work</span>
+              <small>3 video samples</small>
+            </button>
           </article>
           <article class="timeline-item">
             <p class="timeline-kicker">Excellence Talks | Jun 2025 - Aug 2025</p>
             <h3>Marketing & Social Media Management Intern</h3>
             <ul class="detail-list">
-              <li>Created and managed LinkedIn content to support brand presence and audience engagement.</li>
+              <li>Designed over 100 LinkedIn posts and managed content to support brand presence and audience engagement.</li>
               <li>Edited interview and promotional videos with subtitles, thumbnails, and social media formatting.</li>
               <li>Worked on branding materials, logos, animated visuals, and promotional content.</li>
             </ul>
+            <button class="work-showcase-button" type="button" data-modal-target="modal-excellence-talks">
+              <span><i data-lucide="images"></i>View Excellence Talks work</span>
+              <small>8 branding and social samples</small>
+            </button>
           </article>
         </div>
       </section>
@@ -61,7 +68,7 @@
       <section class="section split">
         <div>
           <p class="eyebrow">Education</p>
-          <h2>New Media foundation</h2>
+          <h2>New Media</h2>
         </div>
         <div class="grid">
           <article class="card">
@@ -85,8 +92,83 @@
       </section>
     </main>
 
+    <div class="modal" id="modal-icmedia" aria-hidden="true">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close work samples"><i data-lucide="x"></i></button>
+        <p class="eyebrow">IC Media</p>
+        <h2>Video work</h2>
+        <p>Short-form edits created for social platforms, cultural content, and event-focused media.</p>
+        <div class="work-showcase-modal">
+          <div class="supporting-work-grid video-work-grid">
+            <figure class="modal-work-item">
+              <video src="assets/projects/experience-icmedia-1.mp4" controls preload="metadata" playsinline></video>
+              <figcaption>Socotra island short video</figcaption>
+            </figure>
+            <figure class="modal-work-item">
+              <video src="assets/projects/experience-icmedia-2.mp4" controls preload="metadata" playsinline></video>
+              <figcaption>Galata tower short video</figcaption>
+            </figure>
+            <figure class="modal-work-item">
+              <video src="assets/projects/experience-icmedia-3.mp4" controls preload="metadata" playsinline></video>
+              <figcaption>IC Media short video</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-excellence-talks" aria-hidden="true">
+      <div class="modal-panel">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close work samples"><i data-lucide="x"></i></button>
+        <p class="eyebrow">Excellence Talks</p>
+        <h2>Brand and social work</h2>
+        <p>Selected KAIZUNO and LinkedIn design samples from marketing and social media work.</p>
+        <div class="work-showcase-modal">
+          <figure class="modal-work-item transparent-sample featured-work logo-work">
+            <img src="assets/projects/experience-kaizuno.gif" alt="Animated KAIZUNO brand logo">
+            <figcaption>Animated KAIZUNO brand logo</figcaption>
+          </figure>
+          <div class="work-showcase-divider" aria-hidden="true"></div>
+          <div class="supporting-work-grid">
+            <figure class="modal-work-item wide-work">
+              <img src="assets/projects/experience-youtube-thumbnail.png" alt="Excellence Talks YouTube thumbnail">
+              <figcaption>YouTube thumbnail design</figcaption>
+            </figure>
+            <div class="work-showcase-divider" aria-hidden="true"></div>
+            <figure class="modal-work-item wide-work">
+              <img src="assets/projects/experience-linkedin-banner.png" alt="KAIZUNO LinkedIn banner">
+              <figcaption>LinkedIn banner design</figcaption>
+            </figure>
+            <div class="work-showcase-divider" aria-hidden="true"></div>
+            <figure class="modal-work-item">
+              <img src="assets/projects/experience-linkedin-post.png" alt="KAIZUNO LinkedIn graphic">
+              <figcaption>LinkedIn graphics system</figcaption>
+            </figure>
+            <figure class="modal-work-item">
+              <img src="assets/projects/experience-kaizuno-hotels.png" alt="KAIZUNO for Hotels LinkedIn post">
+              <figcaption>KAIZUNO for Hotels post</figcaption>
+            </figure>
+            <div class="work-showcase-divider" aria-hidden="true"></div>
+            <figure class="modal-work-item diagram-work">
+              <img src="assets/projects/experience-esprix-cycle.png" alt="ESPRIX Excellence Cycle diagram">
+              <figcaption>Cycle diagram design</figcaption>
+            </figure>
+            <div class="work-showcase-divider" aria-hidden="true"></div>
+            <figure class="modal-work-item">
+              <img src="assets/projects/experience-business-card-back.png" alt="KAIZUNO business card back side">
+              <figcaption>Business card back side</figcaption>
+            </figure>
+            <figure class="modal-work-item">
+              <img src="assets/projects/experience-business-card-front.png" alt="KAIZUNO business card front side">
+              <figcaption>Business card front side</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
-      <div class="footer-shell"><span>Samar Dhafer | Experience</span><span>Content creation, marketing, design</span></div>
+      <div class="footer-shell"><span>Samar Dhafer | Experience</span></div>
     </footer>
   </body>
 </html>

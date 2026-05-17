@@ -697,6 +697,189 @@ h3 {
   margin-top: 8px;
 }
 
+.work-showcase-button {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 14px 16px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.work-showcase-button:hover,
+.work-showcase-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--surface));
+  box-shadow: 0 16px 44px rgba(111, 69, 217, 0.14);
+  outline: none;
+}
+
+.work-showcase-button span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+}
+
+.work-showcase-button svg,
+.work-showcase-button i {
+  width: 20px;
+  height: 20px;
+}
+
+.work-showcase-button small {
+  color: var(--muted);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.modal-work-item {
+  margin: 0;
+}
+
+.work-showcase-modal {
+  display: grid;
+  gap: 26px;
+  margin-top: 26px;
+}
+
+.featured-work {
+  justify-self: center;
+  width: min(620px, 100%);
+}
+
+.logo-work {
+  width: min(340px, 72vw);
+  text-align: center;
+}
+
+.supporting-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+.video-work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+}
+
+.supporting-work-grid .modal-work-item:only-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(560px, 100%);
+}
+
+.work-showcase-divider {
+  position: relative;
+  width: min(620px, 100%);
+  height: 18px;
+  justify-self: center;
+}
+
+.supporting-work-grid .work-showcase-divider {
+  grid-column: 1 / -1;
+  margin: 2px 0;
+}
+
+.work-showcase-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent), var(--line), var(--accent), transparent);
+  transform: translateY(-50%);
+}
+
+.work-showcase-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--surface);
+  border-radius: 999px;
+  background: var(--accent);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.modal-work-item img {
+  width: 100%;
+  max-height: none;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.modal-work-item video {
+  width: auto;
+  max-width: 100%;
+  height: min(62vh, 620px);
+  max-height: 620px;
+  object-fit: contain;
+  object-position: center center;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.modal-work-item img {
+  cursor: zoom-in;
+}
+
+.modal-work-item.wide-work {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(900px, 100%);
+}
+
+.modal-work-item.wide-work img {
+  aspect-ratio: auto;
+}
+
+.modal-work-item.diagram-work {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(480px, 100%);
+}
+
+.modal-work-item.diagram-work img {
+  aspect-ratio: 1 / 1;
+}
+
+.modal-work-item.transparent-sample img {
+  padding: 0;
+  background: transparent;
+}
+
+.modal-work-item figcaption {
+  padding: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 800;
+  text-align: center;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -713,6 +896,34 @@ h3 {
   width: 22px;
   height: 22px;
   color: var(--accent-strong);
+}
+
+.resume-section {
+  padding-top: 0;
+}
+
+.resume-preview {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 36px);
+  align-items: center;
+  max-width: 760px;
+}
+
+.resume-thumb {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.resume-thumb img {
+  width: 100%;
+  aspect-ratio: 8.5 / 11;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .site-footer {
@@ -768,6 +979,7 @@ h3 {
   .grid.two,
   .grid.three,
   .contact-grid,
+  .resume-preview,
   .project-index {
     grid-template-columns: 1fr;
   }
@@ -783,6 +995,27 @@ h3 {
   .phone-gallery,
   .modal-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .supporting-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .supporting-work-grid .modal-work-item:only-child {
+    width: 100%;
+  }
+
+  .work-showcase-button {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .work-showcase-button small {
+    white-space: normal;
   }
 
   .section-header {

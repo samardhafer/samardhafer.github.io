@@ -97,7 +97,7 @@
     });
   });
 
-  document.querySelectorAll(".modal-gallery img").forEach((image) => {
+  document.querySelectorAll(".modal-gallery img, .modal-work-item img").forEach((image) => {
     image.addEventListener("click", (event) => {
       event.stopPropagation();
       openImageLightbox(image);
