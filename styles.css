@@ -446,7 +446,13 @@ h3 {
 .interactive-card .veritruth-thumb {
   object-fit: contain;
   object-position: center center;
-  background: #281164;
+  background: #170f38;
+}
+
+.interactive-card .podcast-thumb {
+  object-fit: contain;
+  object-position: center;
+  background: #000;
 }
 
 .interactive-card .drowning-thumb {
@@ -526,6 +532,19 @@ h3 {
 }
 
 .video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.spotify-embed {
+  overflow: hidden;
+  margin-top: 26px;
+  border-radius: 12px;
+  height: 152px;
+}
+
+.spotify-embed iframe {
   width: 100%;
   height: 100%;
   border: 0;
