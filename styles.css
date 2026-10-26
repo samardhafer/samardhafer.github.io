@@ -601,6 +601,28 @@ h3 {
   height: 20px;
 }
 
+.project-document {
+  margin-top: 24px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.project-document summary {
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.project-document iframe {
+  display: block;
+  width: 100%;
+  height: min(65vh, 680px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
 .modal-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -689,6 +711,35 @@ h3 {
   height: auto;
   max-height: none;
   object-fit: cover;
+}
+
+#modal-ghassl .phone-gallery img,
+.interactive-card .ghassl-card-preview img,
+.image-lightbox img.ghassl-preview {
+  aspect-ratio: auto;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  clip-path: inset(0.6% 0.6% round 12% / 6.6%);
+}
+
+#ghassl .ghassl-card-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 260px;
+  padding: 18px;
+  background: var(--surface-strong);
+}
+
+.interactive-card .ghassl-card-preview img {
+  width: calc((100% - 30px) / 4);
+  height: auto;
+  max-height: 100%;
+  min-width: 0;
 }
 
 .single-media {

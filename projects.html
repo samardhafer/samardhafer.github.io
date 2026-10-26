@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects | Samar Dhafer</title>
     <meta name="description" content="Selected multimedia, UI/UX, advertising, photography, and storytelling projects by Samar Dhafer.">
-    <link rel="stylesheet" href="styles.css?v=16">
+    <link rel="stylesheet" href="styles.css?v=21">
+    <link rel="stylesheet" href="assets/projects/ghassl-frames.css?v=2">
     <script defer src="https://unpkg.com/lucide@latest"></script>
-    <script defer src="site.js?v=15"></script>
+    <script defer src="site.js?v=16"></script>
   </head>
   <body>
     <header class="site-header">
@@ -56,6 +57,18 @@
           <span class="timeline-kicker">Solo academic project</span>
           <strong>VeriTruth</strong>
           <span>An AI-powered misinformation and deepfake detection app that helps users verify digital content.</span>
+        </button>
+
+        <button class="project-card interactive-card" id="ghassl" type="button" data-modal-target="modal-ghassl">
+          <span class="ghassl-card-preview" role="img" aria-label="Ghassl app redesign showing sign-in, home, services, and the car-care store">
+            <img src="assets/projects/ghassl-1.jpg" alt="">
+            <img src="assets/projects/ghassl-2.jpg" alt="">
+            <img src="assets/projects/ghassl-3.jpg" alt="">
+            <img src="assets/projects/ghassl-4.jpg" alt="">
+          </span>
+          <span class="timeline-kicker">UX/UI case study</span>
+          <strong>Ghassl UI/UX Redesign</strong>
+          <span>A car-care app redesign making service booking, product shopping, and order tracking clearer and easier to navigate.</span>
         </button>
 
         <button class="project-card interactive-card" id="drowning-in-silence" type="button" data-modal-target="modal-drowning">
@@ -187,6 +200,41 @@
             <img src="assets/projects/veritruth-2.png" alt="VeriTruth AI detection screen">
             <img src="assets/projects/veritruth-3.png" alt="VeriTruth learning screen">
             <img src="assets/projects/veritruth-4.png" alt="VeriTruth settings screen">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-ghassl" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-ghassl-title">
+        <div class="modal-panel">
+          <button class="modal-close" type="button" data-modal-close aria-label="Close project"><i data-lucide="x"></i></button>
+          <p class="timeline-kicker">UX/UI case study</p>
+          <h2 id="modal-ghassl-title">Ghassl UI/UX Redesign</h2>
+          <p>Redesigned the Ghassl car-care app experience around three principles: Clear. Clean. Fast. The project focused on simplifying car-wash booking, improving navigation, and connecting services with an in-app car-care store. User testing observations informed a design that brings service details, pricing, booking, and order tracking into a clearer customer journey.</p>
+          <h3>My Role</h3>
+          <ul>
+            <li>Analyzed usability issues across onboarding, navigation, and the booking process.</li>
+            <li>Identified user pain points and proposed improvements to reduce interruptions and unnecessary steps.</li>
+            <li>Developed primary and secondary personas based on user testing observations.</li>
+            <li>Mapped a primary user's journey to highlight actions, emotions, pain points, and touchpoints.</li>
+            <li>Created wireframes and redesigned interfaces for service discovery, booking, and product shopping.</li>
+            <li>Designed clearer pricing, a visible customer responsibility notice, and order confirmation and tracking screens.</li>
+            <li>Presented the redesign through a demo application and UX/UI case study.</li>
+          </ul>
+          <p><strong>Tools Used:</strong> Google AI Studio, UX Research Methods</p>
+          <p><strong>Key Skills:</strong> UX/UI Design, Usability Analysis, User Personas, User Journey Mapping, Wireframing, Prototyping, Information Architecture, Interaction Design, Visual Communication</p>
+          <p><a class="project-link" href="https://ai.studio/apps/4b69ed99-6fac-45c7-b7ed-d78d17dd2c66" target="_blank" rel="noreferrer">Open Ghassl Demo <i data-lucide="arrow-up-right"></i></a></p>
+          <details class="project-document">
+            <summary>View full case study (PDF)</summary>
+            <p><a class="project-link" href="assets/projects/ghassl-case-study.pdf" target="_blank" rel="noreferrer">Open PDF in a new tab <i data-lucide="arrow-up-right"></i></a></p>
+            <iframe src="assets/projects/ghassl-case-study.pdf" title="Ghassl UX/UI redesign case study PDF" loading="lazy"></iframe>
+          </details>
+          <div class="modal-gallery phone-gallery">
+            <img src="assets/projects/ghassl-1.jpg" alt="Ghassl redesigned sign-in screen" loading="lazy">
+            <img src="assets/projects/ghassl-2.jpg" alt="Ghassl home screen with selected vehicle and booking shortcut" loading="lazy">
+            <img src="assets/projects/ghassl-3.jpg" alt="Ghassl service selection with prices and appointment booking" loading="lazy">
+            <img src="assets/projects/ghassl-4.jpg" alt="Ghassl car-care store with product categories" loading="lazy">
+            <img src="assets/projects/ghassl-5.jpg" alt="Ghassl payment screen with customer responsibility notice" loading="lazy">
+            <img src="assets/projects/ghassl-6.jpg" alt="Ghassl order tracking timeline" loading="lazy">
           </div>
         </div>
       </div>

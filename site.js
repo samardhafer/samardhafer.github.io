@@ -57,6 +57,7 @@
     if (!lightboxImage) return;
     lightboxImage.src = image.currentSrc || image.src;
     lightboxImage.alt = image.alt || "Full-size project image";
+    lightboxImage.classList.toggle("ghassl-preview", Boolean(image.closest("#modal-ghassl")));
     imageLightbox.classList.add("is-open");
     imageLightbox.setAttribute("aria-hidden", "false");
     lightboxClose?.focus();
