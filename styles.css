@@ -249,6 +249,18 @@ h3 {
   gap: 16px;
 }
 
+.hero-portrait {
+  width: 100%;
+  height: clamp(420px, 52vw, 620px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 42%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
 .media-panel {
   overflow: hidden;
   border: 1px solid var(--line);
