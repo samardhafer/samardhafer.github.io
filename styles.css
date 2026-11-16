@@ -1,3 +1,11 @@
+html:not(.gh-ready) body > *:not(#gh-maintenance-overlay) {
+    visibility: hidden !important;
+}
+
+html:not(.gh-ready) {
+    background-color: #f2f2f2 !important;
+}
+
 :root {
   color-scheme: light;
   --bg: #e6e8ec;
@@ -458,7 +466,7 @@ h3 {
 .interactive-card .veritruth-thumb {
   object-fit: contain;
   object-position: center center;
-  background: #4a1c96;
+  background: #170f38;
 }
 
 .interactive-card .podcast-thumb {
