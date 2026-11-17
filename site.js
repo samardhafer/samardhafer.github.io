@@ -1,12 +1,5 @@
 (function () {
-  if (sessionStorage.getItem("gh_bypassed") === "true") {
-      document.documentElement.classList.add("gh-ready");
-  } else {
-      const maintenanceScript = document.createElement("script");
-      maintenanceScript.src = "maintenance.js";
-      document.head.appendChild(maintenanceScript);
-  }
-  const root = document.documentElement;  
+  const root = document.documentElement;
   const toggle = document.querySelector("[data-theme-toggle]");
   const menuButton = document.querySelector("[data-menu-button]");
   const nav = document.querySelector("[data-nav]");
